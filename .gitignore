@@ -1,12 +1,18 @@
+# some of the logs got really big so adding this
+logs/
+
+campy_genome
+*.tsv
+
 # bioinfo files
 *.fastq
 *.fastq.gz
 *.fq
 *.fq.gz
-.fasta
-.fa
-.fasta.gz
-.fa.gz
+*.fasta
+*.fa
+*.fasta.gz
+*.fa.gz
 *.sam
 *.bam
 *.gtf
