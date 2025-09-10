@@ -7,6 +7,7 @@ input_file = args[1]
 print(input_file)
 output_graph = args[2]
 print(output_graph)
+title_str = args[3]
 
 seqs_lengths = read_tsv(input_file)
 print(seqs_lengths)
@@ -18,7 +19,7 @@ hist = seqs_lengths %>%
   facet_wrap(~read_num, ncol = 1) +
   theme_bw() +
   theme(legend.position = "none") +
-  labs(x = "Sequence Length", y = "Count")
+  labs(x = "Sequence Length", y = "Count", title = title_str)
 
 ggsave(output_graph, hist)
 

@@ -17,9 +17,16 @@ import re
 
 # for real data
 # list of tuples with (path, number of reads)
+
+# TODO: make this happen with argparse instead and rewrite it so that we don't need to pass a read count in
+# fq_paths_n_reads = [
+#     ('SRR25630385_1.fastq.gz', 33181752),
+#     ('SRR25630385_2.fastq.gz', 33181752)
+# ]
+
 fq_paths_n_reads = [
-    ('SRR25630385_1.fastq.gz', 33181752),
-    ('SRR25630385_2.fastq.gz', 33181752)
+    ('SRR25630409_1.fastq.gz', 43543075),
+    ('SRR25630409_2.fastq.gz', 43543075)
 ]
 
 
