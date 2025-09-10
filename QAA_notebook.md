@@ -1,4 +1,10 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 *4 Sep 2025*
+
 I had forgotten that Hope suggested we start on this Wednesday at the latest... anyways, it's Thursday and about time to get some work done here
 
 My SRR assignments are `SRR25630409` and `SRR25630385`.
@@ -172,7 +178,7 @@ Needed to make it into a sam file again for the sake of reading the file in pyth
 ```
 sam file is nearly 20 GB
 
-Counting mapped unmapped for SRR25630385 (`count_mapped_SRR25630385_38069001.out`):
+Counting mapped unmapped for SRR25630385 (`count_mapped_SRR25630385_38069906.out`):
 ```
 	Percent of CPU this job got: 99%
 	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:02.74
@@ -180,14 +186,14 @@ Counting mapped unmapped for SRR25630385 (`count_mapped_SRR25630385_38069001.out
 ```
 
 ```
-# mapped: 48271177
-# unmapped: 66
+# mapped: 22910539
+# unmapped: 17341635
 ```
 
-and for SRR25630409 (count_mapped_SRR25630409_38069019`.out`):
+and for SRR25630409 (`count_mapped_SRR25630409_38069907.out`):
 ```
-# mapped: 68387766
-# unmapped: 106
+# mapped: 33240914
+# unmapped: 17431172
 ```
 
 ### htseq-count
@@ -221,3 +227,12 @@ and for SRR25630409 (count_mapped_SRR25630409_38069019`.out`):
 ```
 
 All commands run successfully.. scripts are QAA and QAA2. Didn't run them in a loop so it would be parallelized and faster. Can write a separate script in the future to call the script passing through what the SRR should be based off a given list files or something similar.
+
+*9/10/2025*
+Realized I was missing some of the plots.. added the calls for them to the QAA except for the python plotting. That still needs argparse added so leaving that as a for later thing and hardcoding that for now since it isn't really crucial to the analysis, given fastqc gives the same plots.
+
+Wrapping up the Rmd report, `QAA_report.Rmd`.
+
+Forgot to add justification for forward/reverse setting for htseq-count. Did code in the report markdown and added that.
+
+Submitting now (finally).
