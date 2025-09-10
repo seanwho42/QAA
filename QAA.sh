@@ -64,7 +64,9 @@ SRR=SRR25630385
 #     zcat $file | sed -n '2~4 p' | awk '{ print length }' | sed -E "s/(.*)/Read $n\t\1/" >> ${SRR}_read_lengths.tsv
 # done
 
-/usr/bin/time -v ./plot_read_length_dists.R ${SRR}_read_lengths.tsv seq_length_dist_${SRR}.svg "${SRR} read lengths distribution"
+# # svg isn't working in Rmd for some reason so not this
+# /usr/bin/time -v ./plot_read_length_dists.R ${SRR}_read_lengths.tsv seq_length_dist_${SRR}.svg "${SRR} read lengths distribution"
+/usr/bin/time -v ./plot_read_length_dists.R ${SRR}_read_lengths.tsv seq_length_dist_${SRR}.png "${SRR} read lengths distribution"
 
 
 # # set the paths for all of the genome alignment deal

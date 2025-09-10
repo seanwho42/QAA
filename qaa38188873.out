@@ -1,0 +1,16 @@
+[1] "SRR25630385_read_lengths.tsv"
+[1] "seq_length_dist_SRR25630385.png"
+# A tibble: 65,612,812 × 2
+   read_num seq_length
+   <chr>         <dbl>
+ 1 Read 1          142
+ 2 Read 1          142
+ 3 Read 1          107
+ 4 Read 1          142
+ 5 Read 1          138
+ 6 Read 1          113
+ 7 Read 1          142
+ 8 Read 1          142
+ 9 Read 1          142
+10 Read 1          101
+# ℹ 65,612,802 more rows
