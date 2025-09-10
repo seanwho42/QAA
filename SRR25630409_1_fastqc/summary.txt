@@ -1,0 +1,11 @@
+PASS	Basic Statistics	SRR25630409_1.fastq.gz
+PASS	Per base sequence quality	SRR25630409_1.fastq.gz
+WARN	Per tile sequence quality	SRR25630409_1.fastq.gz
+PASS	Per sequence quality scores	SRR25630409_1.fastq.gz
+FAIL	Per base sequence content	SRR25630409_1.fastq.gz
+WARN	Per sequence GC content	SRR25630409_1.fastq.gz
+PASS	Per base N content	SRR25630409_1.fastq.gz
+PASS	Sequence Length Distribution	SRR25630409_1.fastq.gz
+FAIL	Sequence Duplication Levels	SRR25630409_1.fastq.gz
+FAIL	Overrepresented sequences	SRR25630409_1.fastq.gz
+WARN	Adapter Content	SRR25630409_1.fastq.gz
